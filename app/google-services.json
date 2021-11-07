@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "970290043824",
+    "project_id": "autumn-80419",
+    "storage_bucket": "autumn-80419.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:970290043824:android:f86d453e1a9821b6df1475",
+        "android_client_info": {
+          "package_name": "com.poison.poison"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "970290043824-653s6stjg3cobuisam3gr594vdd8dpk6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgoapRUDAjzm4y_WfAkoQAtkAtMmoq5vQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "970290043824-653s6stjg3cobuisam3gr594vdd8dpk6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

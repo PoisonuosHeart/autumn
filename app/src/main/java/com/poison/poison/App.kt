@@ -1,12 +1,15 @@
 package com.poison.poison
 
 import android.app.Application
+import android.os.Bundle
+import com.google.firebase.analytics.FirebaseAnalytics
 import com.poison.poison.di.appModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.GlobalContext.startKoin
 
 class App : Application() {
+    private lateinit var mFirebaseAnalytics: FirebaseAnalytics
     override fun onCreate() {
         super.onCreate()
 
@@ -18,5 +21,14 @@ class App : Application() {
             // use modules
             modules(appModule)
         }
+
+        // Analytics
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this)
+
+        mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.LOGIN,
+            Bundle().apply{
+                putString(FirebaseAnalytics.Param.METHOD, "Test")
+            }
+        )
     }
 }
