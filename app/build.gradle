@@ -62,4 +62,6 @@ dependencies {
     //firebase
     implementation platform('com.google.firebase:firebase-bom:29.0.0')
     implementation 'com.google.firebase:firebase-analytics-ktx'
+    //Push-n
+    implementation 'com.google.firebase:firebase-messaging'
 }
